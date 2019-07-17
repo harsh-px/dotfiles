@@ -1,0 +1,67 @@
+alias watch='watch '
+alias px='cd $GOPATH/src/github.com/portworx/porx'
+alias tor='cd $GOPATH/src/github.com/portworx/torpedo'
+alias tall='tor && make clean && make docker-build && make deploy'
+
+alias k8s='cd $K8S_ROOT'
+alias k8su='cd $GOPATH/src/github.com/harsh-px/k8s-utils'
+
+alias h='ssh -o ServerAliveInterval=30 harsh@70.0.0.78'
+alias tcolo='ssh root@70.0.0.123'
+
+alias dokcer='docker'
+
+# Git
+alias gs='git status'
+alias gb='git branch'
+
+alias grep='grep --color'
+
+# Vagrant
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vd='vagrant destroy -f'
+
+# General linux commands
+alias findgo='find . -not -path "./vendor/*" -name *.go'
+
+K1_HOME="$GOPATH/src/github.com/harsh-px/k8s-utils/k8s-setup-tools/vagrant"
+alias k1='cd $K1_HOME'
+alias k1m='cd $K1_HOME; vagrant ssh k1m'
+alias k1n1='cd $K1_HOME; vagrant ssh k1n1'
+alias k1n2='cd $K1_HOME; vagrant ssh k1n2'
+alias k1n3='cd $K1_HOME; vagrant ssh k1n3'
+
+K2_HOME="$GOPATH/k8s-2"
+alias k2='cd $K2_HOME'
+alias k2m='cd $K2_HOME; vagrant ssh k2m'
+alias k2n1='cd $K2_HOME; vagrant ssh k2n1'
+alias k2n2='cd $K2_HOME; vagrant ssh k2n2'
+alias k2n3='cd $K2_HOME; vagrant ssh k2n3'
+
+alias ssh-px='ssh -o ServerAliveInterval=30 -i ~/work/keys/px_dev_east.pem '
+
+alias px-spec-box='ssh -i ~/work/keys/harsh-px-aws-prod.pem ubuntu@34.212.253.165'
+
+alias kpm='ssh -i ~/work/keys/harsh-px-aws-prod.pem ubuntu@34.211.135.213'
+alias kpn1='ssh -i ~/work/keys/harsh-px-aws-prod.pem ubuntu@35.167.99.92'
+alias kpn2='ssh -i ~/work/keys/harsh-px-aws-prod.pem ubuntu@35.162.192.39'
+alias kpn3='ssh -i ~/work/keys/harsh-px-aws-prod.pem ubuntu@52.43.161.15'
+
+alias pxtest-all='make clean && make px-test && make build px-test && make deploy'
+
+alias hdev='cd $GOPATH; vagrant ssh harsh-lnx'
+alias goo='ssh -i ~/work/keys/px_dev.pem ubuntu@54.67.4.138'
+alias jv='ssh ubuntu@jv.portworx.com'
+alias 154='ssh harsh@70.0.0.154'
+alias 125='ssh root@70.0.0.125'
+
+alias gc='git commit -a -m '
+
+## kubectl
+alias kpall='kubectl get pods --all-namespaces -o wide'
+alias kn='kubectl get nodes'
+alias kpx='kubectl get pods -n kube-system -l name=portworx -o wide'
+alias kubectl='kubectl --insecure-skip-tls-verify'
+
+alias piyush='ssh admin@70.0.0.128'

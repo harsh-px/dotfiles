@@ -1,0 +1,32 @@
+export GOPATH=~/work
+GOROOT="/usr/local/go"
+export PATH="${PATH}:${GOPATH}/build:${GOPATH}/scripts"
+
+export GCP_ZONE=us-central1-a
+export GCP_CLUSTER_ID=harsh-autopilot-demo
+
+export K8S_UTILS=$GOPATH/src/github.com/harsh-px/k8s-utils
+
+export PX_INSTALLER_DOCKER_HUB_TAG=1.0.0
+export DOCKER_HUB_TAG=latest
+export DOCKER_HUB_USER=harshpx
+export DOCKER_HUB_IMAGE=px
+export DOCKER_HUB_EMAIL=harsh@portworx.com
+export DOCKER_HUB_PASSWD=tigris2010
+export DOCKER_HUB_REPO=harshpx
+export GO15VENDOREXPERIMENT=1
+
+export DOCKER_HUB_TORPEDO_IMAGE=torpedo
+
+export DOCKER_HUB_INSTALL_REPO=portworx # or your private docker repo (if you change this, also update image in the .gtpl template)
+export DOCKER_HUB_MONITOR_IMAGE=monitor
+export DOCKER_HUB_WEBSVC_IMAGE=monitor-websvc
+export DOCKER_HUB_PXINIT_IMAGE=px-init
+
+export KUBECONFIG=/etc/kubernetes/admin.conf
+
+export REPO=harshpx
+export TEST_IMAGE=px-test
+
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+

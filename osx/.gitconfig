@@ -1,0 +1,59 @@
+[user]
+	name = Harsh Desai
+	email = harsh@portworx.com
+
+[core]
+   autocrlf = false
+   editor = vim
+	excludesfile = /home/harsh/.gitignore_global
+   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+
+[rerere]
+   enabled = 0
+   autoupdate = 0
+
+[color]
+   ui = true
+   pager = true
+   diff = auto
+   status = auto
+   branch = auto
+ 
+[color "diff"]
+   whitespace = red reverse
+
+[color "status"]
+   added = yellow
+   changed = green
+   untracked = cyan
+[http]
+   postBuffer = 1048576000
+   sslVerify = false
+[credential]
+   helper = cache
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    lg = "log --color --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset%s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+[push]
+	default = simple
+[colors]
+	ui = true
+[commit]
+	template = /Users/25200/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
