@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="70.0.0.78">
+    <serverData>
+      <paths name="70.0.0.78">
+        <serverdata>
+          <mappings>
+            <mapping deploy="libopenstorage" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="portworx/porx" local="$PROJECT_DIR$/../portworx/porx" web="/" />
+            <mapping deploy="portworx/px-installer" local="$PROJECT_DIR$/../portworx/px-installer" web="/" />
+            <mapping deploy="portworx/talisman" local="$PROJECT_DIR$/../portworx/talisman" web="/" />
+            <mapping deploy="libopenstorage/cloudops" local="$PROJECT_DIR$/cloudops" web="/" />
+            <mapping deploy="libopenstorage/openstorage" local="$PROJECT_DIR$/openstorage" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
